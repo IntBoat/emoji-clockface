@@ -1,0 +1,24 @@
+{
+  "name": "emoji-clockface",
+  "version": "0.1.0",
+  "module": "index.js",
+  "type": "module",
+  "description": "Emoji clock-face",
+  "keywords": [
+    "time",
+    "emoji",
+    "clock"
+  ],
+  "author": "IntBoat <info@zedo.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intboat/emoji-clockface.git"
+  },
+  "files": [
+    "index.js",
+    "index.test.js",
+    "README.md",
+    "package.json"
+  ]
+}

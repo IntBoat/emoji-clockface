@@ -1,6 +1,6 @@
 const clockFace = require('./index');
 
-test("16:30", () => {
+test("'16:30'", () => {
     expect(clockFace.toEmoji('16', '30')).toBe("🕟");
 });
 
@@ -14,6 +14,10 @@ test("00:00", () => {
 
 test("00:25", () => {
     expect(clockFace.toEmoji(0, 25)).toBe("🕧");
+});
+
+test("'00:25'", () => {
+    expect(clockFace.toEmoji('00', '25')).toBe("🕧");
 });
 
 test("24:25", () => {

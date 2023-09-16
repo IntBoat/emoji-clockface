@@ -1,9 +1,20 @@
 # emoji-clockface
+Return Emoji clock-face, with UTC time support.
 
-## require the package:
+This project is a JavaScript module that exports several functions and prototype methods related to clock emojis.
+
+The `clockFace` function takes hours and minutes as arguments and returns the corresponding clock emoji.
+
+The `timeNow` function returns the current time as a clock emoji.
+
+The `toEmoji` and `toUTCEmoji` prototype methods for the `Date` object return the time as a clock emoji in local and UTC time, respectively.
+
+The `dateToEmoji` and `dateToUTCEmoji` functions take a `Date` object as an argument and return the corresponding clock emoji in local and UTC time, respectively.
+
+## Require the package:
 
 ```javascript
-let clockface = require('emoji-clockface');
+let clockFace = require('emoji-clockface');
 ```
 
 ## Available functions:

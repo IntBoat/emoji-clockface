@@ -1,9 +1,9 @@
 {
   "name": "emoji-clockface",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "module": "index.js",
   "type": "module",
-  "description": "Emoji clock-face",
+  "description": "Return Emoji clock-face, with UTC time support.",
   "keywords": [
     "time",
     "emoji",

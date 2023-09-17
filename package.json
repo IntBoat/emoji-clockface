@@ -11,14 +11,23 @@
   ],
   "author": "IntBoat <info@zedo.dev>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/intboat/emoji-clockface.git"
-  },
+  "repository": "https://github.com/IntBoat/emoji-clockface.git",
   "files": [
     "index.js",
     "index.test.js",
     "README.md",
     "package.json"
-  ]
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "jshint index*.js webpack.config.js",
+    "build": "webpack --mode production --config ./webpack.config.js"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "jshint": "^2.13.6",
+    "webpack": "^5.88.2",
+    "jest": "^29.7.0"
+  },
+  "main": "index.js"
 }

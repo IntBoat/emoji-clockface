@@ -12,22 +12,23 @@ function timeNow(utc) {
     return clockFace(utc ? d.getUTCHours() : d.getHours(), utc ? d.getUTCMinutes() : d.getMinutes());
 }
 
-module.exports = {
-    getTime: timeNow,
-    getUTCTime: timeNow.bind(null, true),
-    toEmoji: clockFace,
-    dateToEmoji: (date) => {
-        return clockFace(date.getHours(), date.getMinutes());
-    },
-    dateToUTCEmoji: (date) => {
-        return clockFace(date.getUTCHours(), date.getUTCMinutes());
-    }
-};
+function getUTCTime() {
+    return timeNow(true);
+}
 
-Date.prototype.toEmoji = function () {
-    return clockFace(this.getHours(), this.getMinutes());
-};
+function dateToEmoji(date) {
+    return clockFace(date.getHours(), date.getMinutes());
+}
 
-Date.prototype.toUTCEmoji = function () {
-    return clockFace(this.getUTCHours(), this.getUTCMinutes());
+function dateToUTCEmoji(date) {
+    return clockFace(date.getUTCHours(), date.getUTCMinutes());
+}
+
+export {
+    clockFace as toEmoji,
+    clockFace,
+    timeNow as getTime,
+    getUTCTime,
+    dateToEmoji,
+    dateToUTCEmoji,
 };

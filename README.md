@@ -14,7 +14,7 @@ The `dateToEmoji` and `dateToUTCEmoji` functions take a `Date` object as an argu
 ## Require the package:
 
 ```javascript
-let clockFace = require('emoji-clockface');
+import * as clockFace from 'emoji-clockface';
 ```
 
 ## Available functions:
@@ -29,7 +29,4 @@ clockFace.toEmoji(24, 25); // returns '🕧'
 let now = new Date();
 clockFace.dateToEmoji(now); // return current clockface with local time
 clockFace.dateToUTCEmoji(now); // return current clockface with UTC time
-
-now.toEmoji(); // return current clockface with local time
-now.toUTCEmoji(); // return current clockface with UTC time
 ```
